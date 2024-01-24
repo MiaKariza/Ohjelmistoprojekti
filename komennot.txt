@@ -1,0 +1,17 @@
+git init
+echo Testitiedosto > testitiedosto.txt
+dir
+git status
+git add testitiedosto.txt
+git status
+git commit -m "Ensimmäinen 'commit'"
+git checkout -b oma-haara
+git commit --allow-empty -m "haaran commitointi"
+git status
+git branch
+git checkout main
+git remote add origin https://github.com/MiaKariza/Ohjelmistoprojekti.git
+git push -u origin main
+git checkout oma-haara
+git push -u origin oma-haara
+doskey /history
